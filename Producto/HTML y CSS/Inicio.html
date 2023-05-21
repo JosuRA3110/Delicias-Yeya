@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delicias Yeya</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="Logo de la empresa-modified (1).png">
+
+</head>
+
+<body>
+
+    <header>
+        
+    <a href="#" class="logo">
+
+        <img src="C:\Users\josur\Desktop\Proyecto TISG\Imagenes\Logo de la empresa-modified (1).png" alt="logo de la empresa">
+
+        <h2 class="nombre-empresa">Delicias Yeya</h2>
+    </a>
+        <nav class="Navegacion" id="navi">
+
+            <ul class="nav">
+
+                <li><a href="Inicio.html" class="nav-link">Inicio</a></li>
+
+                <li><a id="Menu" class="nav-link">Menú</a>
+
+                    <ul class="subtitulos">
+
+                        <li class="textoce"><a href="Comidasespeciales.html">Comidas especiales</a></li>
+
+                        <li class="textorep"><a href="Reposteria.html">Reposteria</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="Nosotros.html" class="nav-link">Nosotros</a></li>
+
+                <li><a href="Ubicacion.html" class="nav-link">Ubicación</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div>
+
+        <h2>Delicias Yeya... "Un chineo para su paladar"</h2>
+
+        <h1>Lo más deseado:</h1>
+
+    </div>
+
+    <ul class="contenedor">
+        <li class="responsive">
+            <figure class="img-h1">
+                <img class="imag-1" src="C:\Users\josur\Desktop\Proyecto TISG\Imagenes\Fondo de la pag.png" alt="Ceviche de platano maduro">
+                <figcaption class="Textoc">
+                <h1 class="cevichito">Ceviche de banano verde</h1>
+                <p class="precio1">Precio: 700 colones un vaso de 8oz</p>
+                </figcaption>
+        </li>
+            </figure>
+
+        <li class="responsive2">
+            <figure class="img-h2">
+                    <img class="img-2" src="C:\Users\josur\Desktop\Proyecto TISG\Imagenes\reposteria.jpeg" alt="Pan dulce">
+                    <figcaption class="textop">
+                        <h1 class="pancito">Pan dulce</h1>
+                        <p class="precio2">Precio:1200 colones la bolsita con 5 unidades</p>
+                   </figcaption>
+        </li>
+            </figure>
+            <footer class="abajo">
+                <p> Contactenos a los números 8414-3294 y al 8446-8601</p>
+
+            </footer>
+
+    </ul>
+
+    <style>
+        *{
+        margin: 0px;
+        padding: 0px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e4c8c0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        a{
+        text-decoration: none;
+        color: white;
+        }
+
+        header{
+        display: flex;
+        min-height: 70px;
+        background-color: rgb(235, 125, 61);
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        }
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav{
+    font-family: cursive;
+    font-weight: 600;
+    padding-right: 40px;
+    padding-left: 45px 25px;
+    font-size: 20px;
+}
+
+nav a:hover{
+    color: black;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 20px 0px;
+    }
+}
+ul ol {
+    list-style: none;
+}
+ul{
+    font-family: cursive;
+    display: block;
+    align-items: center;
+    margin: auto;
+    padding: 0px;
+    list-style: none;
+}
+.nav > li{
+    float: left;
+}
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav-link {
+    padding: 0px 3vh;
+}
+ul li{
+    padding: 1vh 0px;
+}
+div h2{
+    justify-content: center;
+    font-family: cursive;
+    font-size: 4vh;
+    margin: 0px;
+    display: flex;
+    color: black;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vh;
+}
+div h1 {
+    justify-content: center;
+    display: flex;
+    font-family: cursive;
+    font-size: 4vh;
+    margin: 0px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imag-1 {
+    height: 300px;
+    width: 450px;
+    max-width: 100%;
+}
+.img-2 {
+    width: 450px;
+    height: 300px;
+    max-width: 100%;
+}
+
+.contenedor figure:hover{
+    transform: scale(1.05);
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.contenedor .img-h1{
+    position: relative;
+    height: 300px;
+    width: 450px;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+.contenedor .img-h2{
+    position: relative;
+    height: 300px;
+    width: 450px;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.contenedor {
+    list-style: none;
+    display: flex;
+}
+.contenedor .responsive .img-h1{
+    position: relative;
+}
+.contenedor .responsive .Textoc{
+    position: absolute;
+    display: none;
+    top: 30vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    font: 20px/25px Verdana;
+    color: white;
+}
+.contenedor .responsive .Textoc .cevichito{
+    font-family: cursive;
+    font-size: 4vh;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+.contenedor .responsive .Textoc .cevichito .precio1{
+    font-family: cursive;
+    font-size: 3vh;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.contenedor .responsive :hover .Textoc{
+    display: block;
+}
+
+
+.contenedor .responsive{
+    margin: 20px 20px;
+}
+.contenedor .responsive2{
+    margin: 20px 20px;
+}
+.contenedor .responsive2 .img-h2{
+    padding: 0;
+    position: relative;
+}
+.contenedor .responsive2 .textop{
+    position: absolute;
+    display: none;
+    top: 30vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    font: 20px/25px Verdana;
+    color: white;
+}
+.contenedor .responsive2 .textop .pancito{
+    font-family: cursive;
+    font-size: 4vh;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+.contenedor .responsive2 .textop .pancito .precio2{
+    font-family: cursive;
+    font-size: 3vh;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+.contenedor .responsive2 :hover .textop{
+    display: block;
+}
+
+.contenedor .abajo{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 5vh;
+    font-family: cursive;
+    margin: 20px 20px;
+}   
+.subtitulos .textoce{
+    background-color: rgb(235, 125, 61);
+    padding: 3px 3px;
+    border-color: black;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    height: 40px;
+    width: 230px;
+    text-align: center;
+    align-items: center;
+
+}
+.subtitulos .textorep{
+    background-color: rgb(235, 125, 61);
+    padding: 3px 3px;
+    padding-right: 10px;
+    border-color: black;
+    border-radius: 5px;
+    margin-left: 30px;
+    display: inline-block;
+    height: 40px;
+    width: 230px;
+    text-align: center;
+    align-items: center;
+
+
+}
+.nav li:hover > ul {
+    display: block;
+}
+
+
+    </style>
+</body> 
+</html>

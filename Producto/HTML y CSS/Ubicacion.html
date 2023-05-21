@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Delicias Yeya</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="C:\Users\josur\Desktop\Proyecto TISG\Imagenes\Logo de la empresa-modified (1).png">
+
+</head>
+
+<body>
+    <header>
+
+        <a href="#" class="logo">
+
+            <img src="C:\Users\josur\Desktop\Proyecto TISG\Imagenes\Logo de la empresa-modified (1).png" alt="logo de la empresa">
+
+            <h2 class="nombre-empresa">Delicias Yeya</h2>
+        </a>
+        <nav class="Navegacion" id="navi">
+
+            <ul class="nav">
+
+                <li><a href="Inicio.html" class="nav-link">Inicio</a></li>
+
+                <li><a id="Menu" class="nav-link">Menú</a>
+
+                    <ul class="subtitulos">
+
+                        <li class="textoce"><a href="Comidasespeciales.html">Comidas especiales</a></li>
+
+                        <li class="textorep"><a href="Reposteria.html">Reposteria</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="Nosotros.html" class="nav-link">Nosotros</a></li>
+
+                <li><a href="Ubicacion.html" class="nav-link">Ubicación</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <div>
+
+        <h2 class="utexto">Nos ubicamos en</h2>
+        <h3 class="u-escrita">San Rafael Abajo de Desamparados. Cabe recalcar que no poseemos un negocio fisico como tal; por ello, solo nos manejamos por entregas a domicilio.</h3>
+
+    </div>
+    </li>
+    </ul>
+    <footer class="abajo">
+        <p> Contactenos a los números 8414-3294 y al 8446-8601</p>
+
+    </footer>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e4c8c0;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            background-color: rgb(235, 125, 61);
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-right: 2px;
+        }
+
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        nav {
+            font-family: cursive;
+            font-weight: 600;
+            padding-right: 40px;
+            padding-left: 45px 25px;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: black;
+        }
+
+        @media (max-width:600px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                padding: 20px 0px;
+            }
+        }
+
+        ul ol {
+            list-style: none;
+        }
+
+        ul {
+            font-family: cursive;
+            display: block;
+            align-items: center;
+            margin: auto;
+            padding: 0px;
+            list-style: none;
+        }
+
+        .nav>li {
+            float: left;
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 140px;
+        }
+
+
+        .nav-link {
+            padding: 0px 3vh;
+        }
+
+        ul li {
+            padding: 1vh 0px;
+        }
+
+        div h2 {
+            justify-content: center;
+            font-family: cursive;
+            font-size: 4vh;
+            margin: 0px;
+            display: flex;
+            color: black;
+            flex-direction: row;
+            align-items: center;
+            padding: 2vh;
+        }
+
+.abajo{
+    font-family: cursive;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vh;
+    bottom: 0px;
+    position: absolute;
+    display: block;
+    width: 100%;
+    margin-bottom: -90px;
+
+}
+
+.u-escrita{
+    font-family: cursive;
+    text-align: center;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    margin: 5px 5px;
+    font-size: 20px;
+
+}
+
+.subtitulos .textoce{
+    background-color: rgb(235, 125, 61);
+    padding: 3px 3px;
+    border-color: black;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    height: 40px;
+    width: 230px;
+    text-align: center;
+    align-items: center;
+
+}
+.subtitulos .textorep{
+    background-color: rgb(235, 125, 61);
+    padding: 3px 3px;
+    padding-right: 10px;
+    border-color: black;
+    border-radius: 5px;
+    margin-left: 30px;
+    display: inline-block;
+    height: 40px;
+    width: 230px;
+    text-align: center;
+    align-items: center;
+}
+
+.ubireal{
+    align-items: center;
+    justify-content: center;
+    display: block;
+    margin:  20px auto;
+    width: 400px;
+    height: 400px;
+    position: static;
+    margin-bottom: 100px;
+
+}
+
+
+    </style>
+    <iframe class="ubireal" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3930.4245502973663!2d-84.0824880852066!3d9.898553792920783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3ac8ba9450e69abb!2zOcKwNTMnNTQuOCJOIDg0wrAwNCc0OS4xIlc!5e0!3m2!1ses!2scr!4v1668182890592!5m2!1ses!2scr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+</body>

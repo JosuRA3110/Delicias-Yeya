@@ -1,0 +1,272 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: #e4c8c0;
+    font-family: cursive;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: rgb(235, 125, 61);
+    justify-content: space-between;
+    align-items: center;
+    font-family: cursive;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+    font-family: cursive;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav{
+    font-family: cursive;
+    font-weight: 600;
+    padding-right: 40px;
+    padding-left: 45px 25px;
+    font-size: 20px;
+}
+
+nav a:hover{
+    color: black;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 20px 0px;
+    }
+}
+ul ol {
+    list-style: none;
+}
+ul{
+    font-family: cursive;
+    display: block;
+    align-items: center;
+    margin: auto;
+    padding: 0px;
+    list-style: none;
+}
+.nav > li{
+    float: left;
+}
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav-link {
+    padding: 0px 3vh;
+}
+ul li{
+    padding: 1vh 0px;
+}
+div h2{
+    justify-content: center;
+    font-family: cursive;
+    font-size: 4vh;
+    margin: 0px;
+    display: flex;
+    color: black;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vh;
+}
+div h1 {
+    justify-content: center;
+    display: flex;
+    font-family: cursive;
+    font-size: 4vh;
+    margin: 0px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.imag-1 {
+    height: 300px;
+    width: 450px;
+    max-width: 100%;
+}
+.img-2 {
+    width: 450px;
+    height: 300px;
+    max-width: 100%;
+}
+
+.contenedor figure:hover{
+    transform: scale(1.05);
+}
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.contenedor .img-h1{
+    position: relative;
+    height: 300px;
+    width: 450px;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+.contenedor .img-h2{
+    position: relative;
+    height: 300px;
+    width: 450px;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+.contenedor {
+    list-style: none;
+    display: flex;
+}
+.contenedor .responsive .img-h1{
+    position: relative;
+}
+.contenedor .responsive .Textoc{
+    position: absolute;
+    display: none;
+    top: 30vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    font: 20px/25px Verdana;
+    color: white;
+}
+.contenedor .responsive .Textoc .cevichito{
+    font-family: cursive;
+    font-size: 4vh;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+.contenedor .responsive .Textoc .cevichito .precio1{
+    font-family: cursive;
+    font-size: 3vh;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.contenedor .responsive :hover .Textoc{
+    display: block;
+}
+
+
+.contenedor .responsive{
+    margin: 20px 20px;
+}
+.contenedor .responsive2{
+    margin: 20px 20px;
+}
+.contenedor .responsive2 .img-h2{
+    padding: 0;
+    position: relative;
+}
+.contenedor .responsive2 .textop{
+    position: absolute;
+    display: none;
+    top: 30vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.7);
+    text-align: center;
+    font: 20px/25px Verdana;
+    color: white;
+}
+.contenedor .responsive2 .textop .pancito{
+    font-family: cursive;
+    font-size: 4vh;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+.contenedor .responsive2 .textop .pancito .precio2{
+    font-family: cursive;
+    font-size: 3vh;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+.contenedor .responsive2 :hover .textop{
+    display: block;
+}
+
+.contenedor .abajo{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    font-size: 5vh;
+    font-family: cursive;
+    margin: 20px 20px;
+}
+.subtitulos .textoce{
+    background-color: rgb(235, 125, 61);
+    padding: 3px 3px;
+    border-color: black;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: 30px;
+    display: inline-block;
+    height: 40px;
+    width: 230px;
+    text-align: center;
+    align-items: center;
+
+}
+.subtitulos .textorep{
+    background-color: rgb(235, 125, 61);
+    padding: 3px 3px;
+    padding-right: 10px;
+    border-color: black;
+    border-radius: 5px;
+    margin-left: 30px;
+    display: inline-block;
+    height: 40px;
+    width: 230px;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+.nav li:hover > ul {
+    display: block;
+}
+
+
